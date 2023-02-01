@@ -4,6 +4,10 @@ This is a Next.js project using MongoDB as a database (Mongoose as the ODM)
 
 > Note: An ODM is an Object Document Mapper. It's a library that allows you to interact with your database using objects
 
+## Live Demo
+
+- [https://nextjs-mongoose-tau.vercel.app/](https://nextjs-mongoose-tau.vercel.app/)
+
 ## Getting Started
 
 - Add your MongoDB URI to the `MONGODB_URI` environment variable in `.env.local`
