@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import serverURL from '@/utils/serverURL'
+import { serverURL } from '@/utils/serverURL'
 
 export default function PostDetail({ post }) {
   return (

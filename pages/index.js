@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import serverURL from '@/utils/serverURL'
+import { serverURL } from '@/utils/serverURL'
 
 export default function Home({ posts }) {
   return (
