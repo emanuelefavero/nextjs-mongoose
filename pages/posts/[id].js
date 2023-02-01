@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Link from 'next/link'
 
 export default function PostDetail({ post }) {
   return (
@@ -6,7 +7,9 @@ export default function PostDetail({ post }) {
       <Head>
         <title>{post.title}</title>
       </Head>
-      <h1>Post Detail</h1>
+      <Link className='link' href='/'>
+        Go Home
+      </Link>
       <h2>{post.title}</h2>
       <p>{post.content}</p>
     </>
