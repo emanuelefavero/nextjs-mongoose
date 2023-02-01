@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Link from 'next/link'
+import serverURL from '@/utils/serverURL'
 
 export default function PostDetail({ post }) {
   return (
@@ -18,7 +19,7 @@ export default function PostDetail({ post }) {
 
 // * get the id from the url query thanks to the [id] in the file name
 export async function getServerSideProps({ params: { id } }) {
-  const res = await fetch(`http://localhost:3000/api/posts/${id}`)
+  const res = await fetch(`${serverURL}/api/posts/${id}`)
   const post = await res.json()
 
   return {

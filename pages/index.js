@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import serverURL from '@/utils/serverURL'
 
 export default function Home({ posts }) {
   return (
@@ -20,7 +21,7 @@ export default function Home({ posts }) {
 
 // * get the posts from the api
 export async function getServerSideProps() {
-  const res = await fetch('http://localhost:3000/api/posts')
+  const res = await fetch(`${serverURL}/api/posts`)
   const posts = await res.json()
 
   return {
