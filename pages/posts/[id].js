@@ -16,7 +16,7 @@ export default function PostDetail({ post }) {
   )
 }
 
-// Get Post Detail with getServerSideProps
+// * get the id from the url query thanks to the [id] in the file name
 export async function getServerSideProps({ params: { id } }) {
   const res = await fetch(`http://localhost:3000/api/posts/${id}`)
   const post = await res.json()
